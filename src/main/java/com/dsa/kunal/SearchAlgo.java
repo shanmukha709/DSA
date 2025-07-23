@@ -66,8 +66,7 @@ public class SearchAlgo {
             }
 
         }
-        System.out.println("maximum value is " + maxsum + " of index " + index
-        );
+        System.out.println("maximum value is " + maxsum + " of index " + index);
     }
 
     public static void main(String[] args) {
