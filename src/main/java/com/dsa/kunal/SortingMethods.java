@@ -31,6 +31,7 @@ public class SortingMethods{
     }
 
     static void selectionsort(int[] arr){
+
         for (int i = 0; i < arr.length; i++){
            int last = arr.length-i-1;
             int max = maxindex(arr,0,last);
@@ -39,10 +40,12 @@ public class SortingMethods{
     }
     static void swap(int[] arr,int max, int end){
         int temp = arr[end];
+
         arr[end] = arr[max];
         arr[max] = temp;
     }
-    static int maxindex(int[] arr, int start, int end){
+    static int
+    maxindex(int[] arr, int start, int end){
         int max = start;
         for(int i = start; i <= end; i++){
             if (arr[max] < arr[i]){
@@ -141,8 +144,9 @@ public class SortingMethods{
 
     public static void main(String[] args) {
         int[] arr = {5,2,7,1,4,7,3};
-        List<Integer> arr1 = cyclesortfinding(arr);
-        System.out.println(arr1);
+//        List<Integer> arr1 = cyclesortfinding(arr);
+        quicksort(arr,0,arr.length-1);
+        System.out.println(Arrays.toString(arr));
 //        cyclesort(arr);
 //        System.out.println(Arrays.toString(arr));
 //        quicksort(arr,0,arr.length-1);
