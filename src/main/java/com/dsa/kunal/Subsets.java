@@ -66,8 +66,10 @@ public class Subsets {
     public static void main(String[] args) {
 //        subsetofstringeithASCII("","abc");
         String[] arr = {"a", "b", "c"};
-        List<List<String>> ans = subseqiteration2(arr);
-        System.out.println(ans);
+        int[] nums = {1,2,3};
+        List<List<Integer>> s = subseqiteration(nums);
+//        List<List<String>> ans = subseqiteration2(arr);
+        System.out.println(s);
 
     }
 }
