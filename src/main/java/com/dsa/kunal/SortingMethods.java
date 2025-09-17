@@ -38,14 +38,14 @@ public class SortingMethods{
             swap(arr,max,last);
         }
     }
+
     static void swap(int[] arr,int max, int end){
         int temp = arr[end];
-
         arr[end] = arr[max];
         arr[max] = temp;
     }
-    static int
-    maxindex(int[] arr, int start, int end){
+
+    static int maxindex(int[] arr, int start, int end){
         int max = start;
         for(int i = start; i <= end; i++){
             if (arr[max] < arr[i]){

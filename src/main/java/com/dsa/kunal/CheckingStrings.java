@@ -5,7 +5,7 @@ public class CheckingStrings {
     static boolean stringequals(String s1, String s2) {
 
         for (int i = 0; i < s1.length(); i++) {
-            boolean check = false; // moved inside the outer loop
+            boolean check = false; // moved inside the outer loop`
 
             for (int j = 0; j < s2.length(); j++) {
                 if (s1.charAt(i) == s2.charAt(j)) {
