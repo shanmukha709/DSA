@@ -1,8 +1,7 @@
 package InterviewPrep.java8;
 
-import java.util.Arrays;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
+import java.util.*;
+import java.util.stream.*;
 
 public class StreamApi {
 
@@ -12,9 +11,9 @@ public class StreamApi {
         String output1 = Stream.of(str)
                 .map(String::toUpperCase)
                 .findFirst()
-
                 .orElse("");
         System.out.println(output1);
+
 
         String str1 = "This will convert each word to uppercase";
         System.out.println(str1);
@@ -35,6 +34,12 @@ public class StreamApi {
     }
 
     public static void main(String[] args) {
-        touppercase();
+//        touppercase();
+
+        int[] nums = {5,3,6,7,2,1};
+        List<Integer> list = List.of(4,6,7,3,4,8,9);
+        Set<Integer> set1 = new HashSet<>(list);
+
+        System.out.println(set1);
     }
 }
