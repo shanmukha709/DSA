@@ -78,7 +78,7 @@ public class FindInRotatedSortedArray {
     }
 
     public static void main(String[] args) {
-        int[] arr = {1, 4, 7, 8, 9, 10, 1, 3, 5, 7};
+        int[] arr = {1, 4, 7, 8, 9, 10, 3, 5, 7};
         int target = 5;
 
         System.out.println("Index value = " + pivotinrotatedarray(arr));
